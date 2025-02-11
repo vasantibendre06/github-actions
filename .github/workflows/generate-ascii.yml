@@ -13,6 +13,8 @@ jobs:
               run: ls -ltra  
               
             - name: Executing Shell Script
-              run: ./ascii-script
+              run: |
+                chmod -x ascii-script.sh                  
+                ./ascii-script.sh
 
             
